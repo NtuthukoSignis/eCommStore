@@ -1,0 +1,316 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:darkslategrey;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.NaviBar {
+  display: block; /* used tp override the default "inline" */
+	color: white;
+	text-decoration: none; /*nav underline */
+	padding: 10px 20px;
+	background-color: rgb(155, 170, 161);
+	transition-property: color, background-color;
+	transition-duration: 2s;
+  text-align: left;
+}
+
+.navlink{
+  color: black;
+  text-decoration: none; /*nav underline */
+  padding: 10px 20px;
+  background-color: rgb(206, 206, 231);
+  transition-property: color, background-color;
+  transition-duration: 2s;
+  font-size: 13px;
+}
+
+.navlink:hover{
+  background-color: green;
+	color: white;
+}
+
+.App-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgb(206, 206, 231);
+  color: black;
+  text-align: center;
+  height: 100px;
+}
+
+.photoGrid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color:dimgray;
+}
+
+.figure {
+  flex-basis: calc(33.333% - 4rem);
+  border: 1px solid #d3d3d3;
+  padding: 2rem;
+  flex-grow: 1;
+  margin: 0 2rem 2rem 2rem;
+  background-color: blanchedalmond;
+}
+
+.single-figure{
+  width: 33.33%;
+  margin: 2em 0 0 20em;
+}
+
+.photo {
+  width: calc(100% + 4rem);
+  margin: -2rem 0rem 0rem -2rem;
+}
+
+.DashPhoto{
+  width: 80px;
+  height: 90px;
+}
+
+.signIn-button-container {
+  display: flex;
+  justify-content: center;
+  background-color: blanchedalmond;
+}
+
+.sign-container {
+display: flex;
+justify-content: right;
+background-color: blanchedalmond;
+margin: 0   0  0 250px;
+width: 50%;
+}
+
+.add-button {
+  flex-basis: 48%;
+  color: white;
+  font-size: 15px;
+  border: 2px solid #f2f2f2;
+  line-height: 2;
+  padding: 5px;
+  background-color:hotpink;
+}
+
+.add-button:hover {
+  background-color: blue;
+}
+
+.form-container {
+  border-radius: 5px;
+  background-color: darkgray;
+  padding: 50px 50px 20px 50px;
+  width: 60%;
+}
+
+.container {
+max-width: 940px;
+margin-left: auto;
+margin-right: auto; /* when both are used the content area will be centered */
+background-color: white;
+background-repeat: repeat-x; /* for the image to be horizontal */
+padding-top: 15px;
+padding-left: 40px;
+box-sizing: border-box;
+opacity: 0.9;
+padding: 0 0 100px 0;
+}
+
+.login_form {
+  width: 100%;
+  padding: 50px 50px 50px 150px;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(4, 70, 48);
+  color: aliceblue;
+}
+
+ion-icon {
+  color: blue;
+  padding: 10px 10px;
+  font-size:xx-large;
+}
+
+input[type=password] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.login-button{
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;  
+}
+
+.upload-button{
+  background-color: #04AA6D;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer; 
+}
+
+.headings {
+  color:cyan;
+}
+
+.login-button:hover{
+  background-color: rgb(4, 70, 48);
+  color: aliceblue;
+}
+
+.imageDashboard{
+  height: 5px;
+  width: 10px;
+}
+
+.removeButton{
+  background-color:hotpink;
+  color: black;
+  padding: 12px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.removeButton:hover{
+  background-color: red;
+  color: white;
+}
+
+
+.logout-button{
+  background-color:white;
+  color:darkred;
+  padding: 12px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  }
+
+.category-heading{
+  font-size:x-large;
+  font-style: italic;
+  
+}
+
+.price{
+  font-size: 15px;
+  color: darkred;
+  font-weight: bold;
+}
+
+.logout-button:hover{
+  background-color: red;
+  color: black;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  background-color: blanchedalmond;
+}
+
+
+.socialMedia{
+  background-color:rgb(206, 206, 231);
+  border: rgb(206, 206, 231);
+}
+
+.error {
+  font: 1em sans-serif;
+  color: darkred;
+}
+
+.category-heading{
+  height: 50px;
+}
+
+table {
+  border-spacing: 0;
+  border: 1px solid black;
+  width: 100%;
+}
+
+td {
+  padding: 0.5rem;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-right: 0;
+}
+
+th {
+  background: green;
+  border-bottom: 3px solid blue;
+  color: white;
+  font-weight: bold;
+  border-bottom: 0;
+  height: 40px;
+}
+
+tr {
+  background: blanchedalmond;
+}
+
+.about-image{
+	width: calc(100% + 4rem);
+  margin: -2rem 0rem 0rem -2rem;
+}
